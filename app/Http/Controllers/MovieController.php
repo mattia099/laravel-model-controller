@@ -10,8 +10,7 @@ class MovieController extends Controller
 
         $movies = Movie::all();
 
-        dd($movies);
 
-        return view('home')->compact($movies);
+        return view('home', compact('movies'));
     }
 }

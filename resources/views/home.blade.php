@@ -7,6 +7,14 @@
   <title>Home</title>
 </head>
 <body>
-  @dump($movies);
+  <ul>
+  @foreach ($movies as $movie)
+    <li>
+      <h1>{{ $movie['title'] }}</h1>
+      <p> {{ $movie['date']}} </p>
+      <span>{{ $movie['vote'] }}</span>
+    </li>    
+  @endforeach
+  </ul>
 </body>
 </html>
