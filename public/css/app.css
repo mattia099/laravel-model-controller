@@ -4,3 +4,29 @@
   box-sizing: border-box;
 }
 
+body {
+  background-color: rgb(227, 225, 223);
+}
+
+.container {
+  width: 1000px;
+  margin: 0 auto;
+  padding-top: 50px;
+}
+
+.container ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.container ul li {
+  text-decoration: none;
+  flex-basis: 32%;
+  background-color: white;
+  padding: 5px;
+  margin-bottom: 30px;
+  box-shadow: 0px 1px 19px 6px blue;
+}
+
